@@ -1,5 +1,4 @@
 --[[
-
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -19,6 +18,7 @@
 ========                                                     ========
 =====================================================================
 =====================================================================
+
 
 What is Kickstart?
 
@@ -52,7 +52,7 @@ Kickstart Guide:
       - <enter key>
 
     (If you already know the Neovim basics, you can skip this step.)
-
+,
   Once you've completed that, you can continue working through **AND READING** the rest
   of the kickstart init.lua.
 
@@ -228,6 +228,8 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'tpope/vim-fugitive', -- git integration
+
+  'vimwiki/vimwiki', -- note taking and personal wiki
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -859,6 +861,8 @@ require('lazy').setup({
     },
   },
 })
+
+require 'project_management'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
